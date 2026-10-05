@@ -1,0 +1,180 @@
+.projects {
+  background: var(--surface);
+  border-top: 1px solid rgba(89,100,92,.08);
+  border-bottom: 1px solid rgba(89,100,92,.08);
+}
+
+.project-list {
+  display: grid;
+  gap: 28px;
+}
+
+.project-card {
+  display: grid;
+  grid-template-columns: 1.03fr .97fr;
+  gap: 38px;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: #fbfaf5;
+}
+
+.project-card-reverse .project-media {
+  order: 2;
+}
+
+.project-card-reverse .project-content {
+  order: 1;
+}
+
+.project-media {
+  min-width: 0;
+  overflow: hidden;
+  border-radius: var(--radius-md);
+}
+
+.project-media .project-placeholder {
+  min-height: 420px;
+  height: 100%;
+}
+
+.project-media img {
+  display: block;
+  width: 100%;
+  height: 420px;
+  min-height: 0;
+  object-fit: contain;
+  object-position: center;
+  background: #f3f3f1;
+  border-radius: var(--radius-md);
+}
+
+.project-content {
+  padding: 24px 22px;
+}
+
+.project-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  color: var(--terracotta);
+  font-size: .72rem;
+  font-weight: 800;
+  letter-spacing: .08em;
+}
+
+.project-content h3 {
+  margin: 14px 0 18px;
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  font-weight: 700;
+  line-height: 1.08;
+}
+
+.project-content > p {
+  color: var(--muted);
+}
+
+.project-points {
+  margin: 22px 0;
+  padding: 18px 20px;
+  border-left: 3px solid var(--green);
+  background: var(--surface-soft);
+}
+
+.project-points p {
+  color: #576159;
+  font-size: .86rem;
+}
+
+.project-points p + p {
+  margin-top: 8px;
+}
+
+.project-compact {
+  grid-template-columns: 1fr;
+  background:
+    linear-gradient(135deg, rgba(220,229,220,.7), rgba(234,209,195,.5)),
+    #fbfaf5;
+}
+
+.project-compact .project-content {
+  max-width: 850px;
+  padding: 40px;
+}
+
+.cv-section {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.cv-box {
+  padding: 48px;
+  display: grid;
+  grid-template-columns: 1.15fr .85fr;
+  gap: 50px;
+  align-items: center;
+  border-radius: var(--radius-lg);
+  background: var(--green-dark);
+  color: var(--white);
+  box-shadow: var(--shadow);
+}
+
+.cv-box .section-kicker {
+  color: #d7e4d9;
+}
+
+.cv-box h2 {
+  margin: 10px 0 14px;
+  font-family: var(--font-heading);
+  font-size: clamp(2.2rem, 4vw, 3.8rem);
+  font-weight: 700;
+  line-height: 1.05;
+}
+
+.cv-box p {
+  color: #d9e1da;
+}
+
+.cv-actions {
+  display: grid;
+  gap: 14px;
+  justify-items: start;
+}
+
+.cv-actions .btn {
+  color: var(--green-dark);
+  background: var(--surface);
+  border-color: var(--surface);
+}
+
+.cv-actions small {
+  color: #c5d0c7;
+  line-height: 1.6;
+}
+
+
+/* Video demo cho đề tài cảm biến vân tay */
+.project-video {
+  display: block;
+  width: 100%;
+  height: 420px;
+  object-fit: contain;
+  object-position: center;
+  background: #111;
+  border-radius: var(--radius-md);
+}
+
+@media (max-width: 650px) {
+  .project-video {
+    height: 300px;
+  }
+}
+
+
+/* Video portfolio: tự chạy, không controls, giữ khung sạch */
+.project-video {
+  cursor: default;
+  box-shadow: inset 0 0 0 1px rgba(89, 100, 92, 0.08);
+}

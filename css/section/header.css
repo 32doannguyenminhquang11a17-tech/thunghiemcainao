@@ -1,0 +1,258 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(246, 243, 236, 0.92);
+  backdrop-filter: blur(18px);
+  border-bottom: 1px solid rgba(89, 100, 92, .12);
+}
+
+.nav-wrap {
+  min-height: 78px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand-mark {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-content: center;
+  border-radius: 50%;
+  background: var(--green-dark);
+  color: var(--white);
+  font-family: var(--font-heading);
+  font-size: 1.45rem;
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.brand-text strong {
+  font-size: .98rem;
+}
+
+.brand-text small {
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: .64rem;
+  letter-spacing: .03em;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.nav a {
+  color: #4e5b53;
+  font-size: .88rem;
+  font-weight: 700;
+  transition: color .2s ease;
+}
+
+.nav a:hover {
+  color: var(--terracotta);
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn-cv {
+  min-height: 42px;
+  padding: 0 18px;
+  font-size: .84rem;
+}
+
+.menu-btn {
+  display: none;
+  width: 42px;
+  height: 42px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface);
+  color: var(--ink);
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.contact-strip {
+  border-top: 1px solid rgba(89, 100, 92, .09);
+  background: rgba(255,253,248,.65);
+}
+
+.contact-strip-inner {
+  min-height: 46px;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: center;
+  gap: 48px;
+  align-items: center;
+}
+
+.contact-strip a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+  font-size: .75rem;
+}
+
+.contact-strip span {
+  color: var(--muted);
+}
+
+.contact-strip strong {
+  color: var(--green-dark);
+  font-weight: 700;
+}
+
+.hero {
+  min-height: calc(100vh - 124px);
+  padding: 80px 0 110px;
+  display: flex;
+  align-items: center;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.12fr .88fr;
+  gap: 74px;
+  align-items: center;
+}
+
+.hero-copy h1 {
+  max-width: 760px;
+  margin: 16px 0 26px;
+  font-family: var(--font-heading);
+  font-size: clamp(3.5rem, 7vw, 6.7rem);
+  font-weight: 750;
+  line-height: 1.10;
+  letter-spacing: -0.025em;
+}
+
+.hero-copy h1 span {
+  color: var(--green-dark);
+}
+
+.hero-desc {
+  max-width: 680px;
+  color: var(--muted);
+  font-size: 1.02rem;
+}
+
+.hero-desc strong {
+  color: var(--ink);
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 32px;
+}
+
+.hero-highlights {
+  max-width: 720px;
+  margin-top: 48px;
+  padding-top: 26px;
+  border-top: 1px solid var(--line);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.hero-highlights div {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.highlight-no {
+  color: var(--terracotta);
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+}
+
+.hero-highlights p {
+  color: #526057;
+  font-size: .82rem;
+  font-weight: 700;
+}
+
+.hero-visual {
+  position: relative;
+}
+
+.photo-card {
+  position: relative;
+  z-index: 2;
+  padding: 12px;
+  border: 1px solid rgba(95, 120, 102, .22);
+  border-radius: 40px;
+  background: rgba(255,253,248,.82);
+  box-shadow: var(--shadow);
+}
+
+.portrait-placeholder,
+.hero-photo {
+  min-height: 540px;
+  border-radius: 30px;
+  object-fit: cover;
+}
+
+.photo-caption {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 18px 12px 10px;
+  align-items: center;
+}
+
+.photo-caption span {
+  color: var(--muted);
+  font-size: .72rem;
+}
+
+.photo-caption strong {
+  text-align: right;
+  color: var(--green-dark);
+  font-size: .78rem;
+}
+
+.soft-shape {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(1px);
+}
+
+.soft-shape-one {
+  width: 180px;
+  height: 180px;
+  right: -60px;
+  top: -50px;
+  background: var(--terracotta-soft);
+}
+
+.soft-shape-two {
+  width: 150px;
+  height: 150px;
+  left: -55px;
+  bottom: -40px;
+  background: var(--green-soft);
+}

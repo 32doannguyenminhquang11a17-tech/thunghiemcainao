@@ -1,0 +1,166 @@
+@media (max-width: 1000px) {
+  .nav {
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    top: 72px;
+    display: none;
+    padding: 18px;
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    background: var(--surface);
+    box-shadow: var(--shadow-soft);
+  }
+
+  .nav.is-open {
+    display: grid;
+    gap: 6px;
+  }
+
+  .nav a {
+    padding: 10px 8px;
+  }
+
+  .menu-btn {
+    display: grid;
+    place-content: center;
+  }
+
+  .hero-grid,
+  .about-grid,
+  .contact-box,
+  .cv-box {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-grid {
+    gap: 48px;
+  }
+
+  .hero-visual {
+    max-width: 680px;
+  }
+
+  .skill-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+@media (max-width: 760px) {
+  .container {
+    width: min(100% - 28px, 1180px);
+  }
+
+  .section {
+    padding: 78px 0;
+  }
+
+  .brand-text small {
+    display: none;
+  }
+
+  .btn-cv {
+    display: none;
+  }
+
+  .contact-strip {
+    display: none;
+  }
+
+  .hero {
+    min-height: auto;
+    padding: 64px 0 82px;
+  }
+
+  .hero-copy h1 {
+    font-size: clamp(3rem, 14vw, 4.8rem);
+    line-height: 1.08;
+  }
+
+  .hero-highlights {
+    grid-template-columns: 1fr;
+  }
+
+  .portrait-placeholder,
+  .hero-photo {
+    min-height: 430px;
+  }
+
+  .photo-caption {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .photo-caption strong {
+    text-align: left;
+  }
+
+  .about-values {
+    grid-template-columns: 1fr;
+  }
+
+  .about-placeholder,
+  .about-photo {
+    min-height: 400px;
+  }
+
+  .project-card {
+    padding: 12px;
+  }
+
+  .project-content {
+    padding: 22px 12px;
+  }
+
+  .project-media .project-placeholder,
+  .project-media img {
+    min-height: 300px;
+  }
+
+  .project-compact .project-content {
+    padding: 26px 14px;
+  }
+
+  .cv-box {
+    padding: 30px 24px;
+  }
+
+  .contact-list a {
+    grid-template-columns: 1fr auto;
+  }
+
+  .contact-list span {
+    grid-column: 1 / -1;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+
+/* Project chỉ chuyển sang bố cục dọc trên điện thoại nhỏ */
+@media (max-width: 650px) {
+  .project-card {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card-reverse .project-media,
+  .project-card-reverse .project-content {
+    order: initial;
+  }
+}

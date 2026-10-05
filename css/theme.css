@@ -1,0 +1,22 @@
+:root {
+  --paper: #f6f3ec;
+  --paper-deep: #eee9dd;
+  --surface: #fffdf8;
+  --surface-soft: #f2efe6;
+  --ink: #25302b;
+  --muted: #6e786f;
+  --green: #5f7866;
+  --green-dark: #3f5747;
+  --green-soft: #dce5dc;
+  --terracotta: #c97f5d;
+  --terracotta-soft: #ead1c3;
+  --line: #ddd8cc;
+  --white: #ffffff;
+  --shadow: 0 22px 70px rgba(49, 57, 49, 0.11);
+  --shadow-soft: 0 12px 35px rgba(49, 57, 49, 0.08);
+  --radius-lg: 34px;
+  --radius-md: 24px;
+  --radius-sm: 16px;
+  --font-body: "Times New Roman", Times, serif;
+  --font-heading: "Times New Roman", Times, serif;
+}
